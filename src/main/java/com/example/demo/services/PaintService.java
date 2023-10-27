@@ -103,6 +103,5 @@ public class PaintService
             return new ResponseEntity<ResponseDTO>(responseDTO, HttpStatus.OK);
         }
 
-
     }
 }

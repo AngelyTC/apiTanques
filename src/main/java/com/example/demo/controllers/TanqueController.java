@@ -31,4 +31,13 @@ public class TanqueController {
     public ResponseEntity<ResponseDTO> guardarTaqnue(@RequestBody RequestDTO requestDTO){
         return this.tanqueService.guardarTanque(requestDTO);
     }
+    @PutMapping("/actualizar")
+    public ResponseEntity<ResponseDTO> actualizarTanque(@RequestBody RequestDTO requestDTO){
+        return this.tanqueService.actualizarTanque(requestDTO);
+    }
+
+    @DeleteMapping("/delete")
+    public ResponseEntity<ResponseDTO> eliminarTanque(@RequestBody RequestDTO requestDTO){
+        return this.tanqueService.eliminarTanque(requestDTO);
+    }
 }
