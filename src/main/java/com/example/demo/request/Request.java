@@ -1,9 +1,6 @@
 package com.example.demo.request;
 
-import com.example.demo.models.Role;
-import com.example.demo.models.User;
-import com.example.demo.models.Paint;
-import com.example.demo.models.Cocina;
+import com.example.demo.models.*;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -19,6 +16,8 @@ public class Request {
     private Paint paint;
     @JsonProperty("cocina")
     private Cocina cocina;
+    @JsonProperty("tanque")
+    private Tanque tanque;
 
     public User getUser() {
         return user;
@@ -50,5 +49,13 @@ public class Request {
 
     public void setCocina(Cocina cocina) {
         this.cocina = cocina;
+    }
+
+    public Tanque getTanque() {
+        return tanque;
+    }
+
+    public void setTanque(Tanque tanque) {
+        this.tanque = tanque;
     }
 }

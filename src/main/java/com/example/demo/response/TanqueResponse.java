@@ -1,26 +1,33 @@
-package com.example.demo.models;
+package com.example.demo.response;
 
-import jakarta.persistence.*;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
-import java.math.BigDecimal;
 import java.sql.Date;
-import java.sql.Timestamp;
-@Entity
-@Table(name = "tanques")
-public class Tanque {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(unique = true, nullable = false)
 
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class TanqueResponse {
+    @JsonProperty("id")
     private Integer id;
-    private  String capacidad;
+    @JsonProperty("capacidad")
+    private String capacidad;
+    @JsonProperty("nivel_actual")
     private Double nivel_actual;
+    @JsonProperty("tipo_gasolina")
     private String tipo_gasolina;
+    @JsonProperty("ubicacion")
     private String ubicacion;
+    @JsonProperty("precio_galon")
     private Double precio_galon;
+    @JsonProperty("Id_Cliente")
     private Integer Id_Cliente;
+    @JsonProperty("tipo_pago")
     private String tipo_pago;
+    @JsonProperty("fecha")
     private Date fecha;
+
     public Integer getId() {
         return id;
     }
@@ -92,5 +99,4 @@ public class Tanque {
     public void setFecha(Date fecha) {
         this.fecha = fecha;
     }
-
 }

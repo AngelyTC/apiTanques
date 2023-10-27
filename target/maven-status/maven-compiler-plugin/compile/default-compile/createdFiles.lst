@@ -1,6 +1,11 @@
+com\example\demo\services\TanqueService.class
 com\example\demo\response\PaintResponse.class
 com\example\demo\response\CocinaResponse.class
 com\example\demo\services\CocinaService.class
+com\example\demo\models\Tanque.class
+com\example\demo\response\TanqueResponse.class
 com\example\demo\controllers\CocinaController.class
 com\example\demo\repositories\CocinaRepository.class
+com\example\demo\controllers\TanqueController.class
+com\example\demo\repositories\TanqueRepository.class
 com\example\demo\models\Cocina.class

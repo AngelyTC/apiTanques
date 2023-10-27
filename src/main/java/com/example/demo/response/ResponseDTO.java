@@ -1,5 +1,6 @@
 package com.example.demo.response;
 
+import com.example.demo.services.TanqueService;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -18,6 +19,8 @@ public class ResponseDTO {
     private PaintResponse paint;
     @JsonProperty("cocina")
     private CocinaResponse cocina;
+    @JsonProperty("tanque")
+    private TanqueResponse tanque;
 
     public String getResponse() {
         return response;
@@ -57,5 +60,13 @@ public class ResponseDTO {
 
     public void setCocina(CocinaResponse cocina) {
         this.cocina = cocina;
+    }
+
+    public TanqueResponse getTanque() {
+        return tanque;
+    }
+
+    public void setTanque(TanqueResponse tanque) {
+        this.tanque = tanque;
     }
 }
