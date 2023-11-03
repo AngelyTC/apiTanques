@@ -17,7 +17,9 @@ import java.util.Optional;
 public class TanqueController {
     @Autowired
     TanqueService tanqueService;
-
+    public TanqueController(TanqueService tanqueService) {
+        this.tanqueService = tanqueService;
+    }
     @GetMapping("/getTanque")
     public ArrayList<Tanque> obtenerPaint(){
         return tanqueService.obtenerTanques();
@@ -25,6 +27,11 @@ public class TanqueController {
     @GetMapping("/Tanque/{id}")
     public Optional<Tanque> obtenerId(@PathVariable("id") Integer id){
         return this.tanqueService.obtenerId(id);
+    }
+
+    @GetMapping("/nivelActual/{id}")
+    public Optional<Double> obtenerNivelActualPorId(@PathVariable("id") Integer id){
+        return this.tanqueService.obtenerNivelActualPorId(id);
     }
 
     @PostMapping("/tanqueCreate")
@@ -35,6 +42,12 @@ public class TanqueController {
     public ResponseEntity<ResponseDTO> actualizarTanque(@RequestBody RequestDTO requestDTO){
         return this.tanqueService.actualizarTanque(requestDTO);
     }
+
+    @PutMapping("/actualizarNivel")
+    public ResponseEntity<ResponseDTO> actualizarNivelTanque(@RequestBody RequestDTO requestDTO){
+        return this.tanqueService.actualizarNivelTanque(requestDTO);
+    }
+
 
     @DeleteMapping("/delete")
     public ResponseEntity<ResponseDTO> eliminarTanque(@RequestBody RequestDTO requestDTO){

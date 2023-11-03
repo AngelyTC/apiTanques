@@ -2,14 +2,18 @@ C:\practica\src\main\java\com\example\demo\models\Cocina.java
 C:\practica\src\main\java\com\example\demo\repositories\CocinaRepository.java
 C:\practica\src\main\java\com\example\demo\repositories\TanqueRepository.java
 C:\practica\src\main\java\com\example\demo\repositories\PaintRepository.java
+C:\practica\src\main\java\com\example\demo\services\NombreService.java
+C:\practica\src\main\java\com\example\demo\models\Nombre.java
 C:\practica\src\main\java\com\example\demo\services\TanqueService.java
 C:\practica\src\main\java\com\example\demo\response\ResponseDTO.java
+C:\practica\src\main\java\com\example\demo\controllers\NombreController.java
 C:\practica\src\main\java\com\example\demo\models\Paint.java
 C:\practica\src\main\java\com\example\demo\services\CocinaService.java
 C:\practica\src\main\java\com\example\demo\DemoApplication.java
 C:\practica\src\main\java\com\example\demo\response\TanqueResponse.java
 C:\practica\src\main\java\com\example\demo\services\PaintService.java
 C:\practica\src\main\java\com\example\demo\controllers\RoleController.java
+C:\practica\src\main\java\com\example\demo\response\NombreResponse.java
 C:\practica\src\main\java\com\example\demo\controllers\CocinaController.java
 C:\practica\src\main\java\com\example\demo\controllers\PaintController.java
 C:\practica\src\main\java\com\example\demo\models\Tanque.java
@@ -27,3 +31,4 @@ C:\practica\src\main\java\com\example\demo\services\UserService.java
 C:\practica\src\main\java\com\example\demo\controllers\TanqueController.java
 C:\practica\src\main\java\com\example\demo\response\PaintResponse.java
 C:\practica\src\main\java\com\example\demo\models\Role.java
+C:\practica\src\main\java\com\example\demo\repositories\NombreRepository.java

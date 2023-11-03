@@ -18,6 +18,10 @@ public class Request {
     private Cocina cocina;
     @JsonProperty("tanque")
     private Tanque tanque;
+    @JsonProperty("nuevo_nivel")
+    private Double nuevoNivel;
+    @JsonProperty("nombre")
+    private Nombre nombre;
 
     public User getUser() {
         return user;
@@ -54,8 +58,24 @@ public class Request {
     public Tanque getTanque() {
         return tanque;
     }
-
     public void setTanque(Tanque tanque) {
         this.tanque = tanque;
     }
+
+    public Double getNuevoNivel() {
+        return nuevoNivel;
+    }
+
+    public void setNuevoNivel(Double nuevoNivel) {
+        this.nuevoNivel = nuevoNivel;
+    }
+
+    public Nombre getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(Nombre nombre) {
+        this.nombre = nombre;
+    }
+
 }

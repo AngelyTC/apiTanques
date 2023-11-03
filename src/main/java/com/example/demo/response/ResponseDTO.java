@@ -22,6 +22,9 @@ public class ResponseDTO {
     @JsonProperty("tanque")
     private TanqueResponse tanque;
 
+    @JsonProperty("nombre")
+    private NombreResponse nombre;
+
     public String getResponse() {
         return response;
     }
@@ -68,5 +71,13 @@ public class ResponseDTO {
 
     public void setTanque(TanqueResponse tanque) {
         this.tanque = tanque;
+    }
+
+    public NombreResponse getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(NombreResponse nombre) {
+        this.nombre = nombre;
     }
 }

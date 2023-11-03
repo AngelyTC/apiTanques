@@ -7,5 +7,10 @@ com\example\demo\response\TanqueResponse.class
 com\example\demo\controllers\CocinaController.class
 com\example\demo\repositories\CocinaRepository.class
 com\example\demo\controllers\TanqueController.class
+com\example\demo\services\NombreService.class
 com\example\demo\repositories\TanqueRepository.class
+com\example\demo\response\NombreResponse.class
+com\example\demo\models\Nombre.class
+com\example\demo\repositories\NombreRepository.class
 com\example\demo\models\Cocina.class
+com\example\demo\controllers\NombreController.class
